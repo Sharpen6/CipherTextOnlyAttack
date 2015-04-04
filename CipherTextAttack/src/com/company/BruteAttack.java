@@ -100,8 +100,15 @@ public class BruteAttack {
 
     public String GetBestKey() {
         String ans = "";
+
+        Map<Character, Character> treeMap = new TreeMap<Character, Character>();
+
         for (int i = 0; i < 8; i++) {
-            ans += bestKey.get(i) + " " + ((char) (i + 97))  + "\n";
+            treeMap.put(bestKey.get(i),((char) (i + 97)));
+            //ans += bestKey.get(i) + " " + ((char) (i + 97))  + "\n";
+        }
+        for (Map.Entry<Character, Character> entry : treeMap.entrySet()) {
+            ans += entry.getKey()+" "+entry.getValue()+"\n";
         }
         return ans;
     }

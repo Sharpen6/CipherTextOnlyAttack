@@ -1,1 +1,1 @@
-java  -jar CipherTextAttack.jar Decryption plainText_encrypted.txt iv.txt
+java  -jar CipherTextAttack.jar Decryption Tolstoy_cipher.txt IV_longExample.txt
