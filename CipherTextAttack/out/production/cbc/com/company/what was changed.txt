@@ -1,0 +1,5 @@
+main - FindKey was added
+BruteAttack - working  new class
+KeysSystem-FindKey& assignNext are new methods
+Encryptor- wasnt changed.
+
